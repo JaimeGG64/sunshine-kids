@@ -1,0 +1,27 @@
+
+// Brand Colors
+$dark-blue: #004B8D;
+$light-blue: #EDF5F6;
+$yellow: #F8EF24;
+$black: #000000;
+$white: #FFFFFF;
+
+$break-point: (
+    "sm": 576px,
+    "md": 768px,
+    "lg": 1024px,
+    "xl": 1280px
+);
+
+// Gutters
+$mobile-gutter: 1.5rem;
+$tablet-gutter: 3.25rem;
+$lg-gutter: 8.5rem;
+
+// Icons
+$lg-icon-size: 4rem;
+
+// Font Weight
+$weight-regular: 400;
+$weight-bold: 700;
+$weight-black: 900;

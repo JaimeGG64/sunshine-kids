@@ -1,0 +1,1 @@
+import { faAddressBook } from '@fortawesome/free-solid-svg-icons'

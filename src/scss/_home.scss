@@ -1,0 +1,20 @@
+.container{
+    max-width: 80rem;
+    margin: auto;
+}
+
+.buckets{
+    background: $dark-blue;
+    &__heading{
+        color: $yellow;
+        text-align: center;
+    }
+    &__list{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    &__bucket-heading, &__bucket-description, i{
+        color: $white;
+        text-align: center;
+    }
+}
