@@ -1,6 +1,33 @@
-.container{
-    max-width: 80rem;
-    margin: auto;
+.hero-section{
+    
+    background:  linear-gradient(90deg, $dark-blue 40%, rgba(0, 0, 0, 0.1)), url("http://sunshinekids.org/images/slider_pic.jpg");
+    height: 100vh;
+    max-height: 45rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    &__title-treatment{
+        width: 36rem;
+    }
+}
+
+.about{
+    background: $light-blue;
+    &__wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    &__img{
+        width: 100%;
+    }
+    &__text-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 $lg-gutter;
+    }
+    &__heading{
+        color: $dark-blue;
+    }
 }
 
 .buckets{

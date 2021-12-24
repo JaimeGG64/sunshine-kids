@@ -1,0 +1,9 @@
+.footer{
+    background: $dark-blue;
+    color: $white;
+}
+
+.contact-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
