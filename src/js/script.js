@@ -1,1 +1,1 @@
-import { faAddressBook } from '@fortawesome/free-solid-svg-icons'
+import '@fortawesome/fontawesome-free/js/all.js';

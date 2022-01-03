@@ -1,0 +1,36 @@
+.news-section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    h2{
+        text-align: center;
+        color: $dark-blue;
+        margin-bottom: 2rem;
+    }
+}
+
+.news-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.news-item{
+    &__thumbnail{
+        width: 100%;
+        margin-bottom: .25rem;
+    }
+    &__heading{
+        margin: 0;
+    }
+    &__description{
+        color: $dark-blue;
+        line-height: 1.25;
+    }
+}
+
+@media screen and (min-width: map-get($break-point , "md")) {
+    .news-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

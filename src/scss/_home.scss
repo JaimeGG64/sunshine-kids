@@ -1,47 +1,51 @@
-.hero-section{
-    
-    background:  linear-gradient(90deg, $dark-blue 40%, rgba(0, 0, 0, 0.1)), url("http://sunshinekids.org/images/slider_pic.jpg");
-    height: 100vh;
-    max-height: 45rem;
-    background-repeat: no-repeat;
-    background-position: center center;
-    &__title-treatment{
-        width: 36rem;
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.1) 20%, $dark-blue),
+        url("http://sunshinekids.org/images/slider_pic.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 100vh; 
+        max-height: 50rem;
+    &__title-treatment {
+        width: 20rem;
     }
 }
 
-.about{
+.about {
     background: $light-blue;
-    &__wrapper{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+    &__text-content {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
     }
-    &__img{
+    &__img {
         width: 100%;
     }
-    &__text-content{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 0 $lg-gutter;
-    }
-    &__heading{
+    &__heading {
         color: $dark-blue;
     }
 }
 
-.buckets{
-    background: $dark-blue;
-    &__heading{
-        color: $yellow;
-        text-align: center;
+@media screen and (min-width: map-get($break-point , "md")) {
+    .hero-section {
+        background: linear-gradient(90deg, $dark-blue 40%, rgba(0, 0, 0, 0.1)),
+            url("http://sunshinekids.org/images/slider_pic.jpg");
+        height: 100vh;
+        max-height: 35rem;
+        background-repeat: no-repeat;
+        background-position: center center;
+        &__title-treatment {
+            width: 36rem;
+        }
     }
-    &__list{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-    &__bucket-heading, &__bucket-description, i{
-        color: $white;
-        text-align: center;
+
+    .about {
+        &__wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        &__text-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
     }
 }

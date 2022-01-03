@@ -1,9 +1,13 @@
-.footer{
+.footer {
     background: $dark-blue;
     color: $white;
+    padding-top: 2rem;
+    padding-bottom: 1rem
 }
 
-.contact-list{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+@media screen and (min-width: map-get($break-point , "md")) {
+    .contact-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
 }

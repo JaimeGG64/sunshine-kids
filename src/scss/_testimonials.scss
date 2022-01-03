@@ -1,0 +1,55 @@
+.testimonial-section{
+    background: $light-blue;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    h2{
+        color: $dark-blue;
+        text-align: center;
+    }
+}
+
+.testimonial-item {
+    display: grid;
+    grid-template-areas:
+        "image image"
+        "quote text";
+    grid-template-columns: 1fr 4fr;
+    &__image {
+        grid-area: image;
+        height: 100%;
+        width: 100%;
+        max-width: 20rem;
+        justify-self: center;
+        object-fit: cover;
+        -webkit-mask-image: url("../img/logo-mask.svg");
+        mask-image: url("../img/logo-mask.svg");
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-size: contain;
+        -webkit-mask-position: center center;
+    }
+    &__text-wrapper {
+        grid-area: text;
+    }
+    &__quote{
+        font-size: 1.15rem;
+        line-height: 1.25;
+        margin-bottom: .25rem;
+    }
+    &__person{
+        font-style: italic;
+        color: $dark-blue;
+        line-height: 1.25;
+    }
+    &::before{
+        content: url("../img/quote-marks.svg");
+        grid-area: quote;
+    }
+}
+
+@media screen and (min-width: map-get($break-point , "md")) {
+    .testimonial-item {
+        grid-template-areas:
+        "image quote text";
+        grid-template-columns: 3fr 1fr 3fr;
+    }
+}

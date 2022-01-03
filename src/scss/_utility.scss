@@ -1,8 +1,25 @@
-.container{
+.container {
     max-width: 80rem;
     margin: auto;
 }
 
-.gutters{
-    padding: 0 $lg-gutter;
+.container-narrow{
+    max-width: 60rem;
+    margin: auto;
+}
+
+.gutters {
+    padding: 0 $mobile-gutter;
+}
+
+@media screen and (min-width: map-get($break-point , "md")) {
+    .gutters {
+        padding: 0 $tablet-gutter;
+    }
+}
+
+@media screen and (min-width: map-get($break-point , "lg")) {
+    .gutters {
+        padding: 0 $lg-gutter;
+    }
 }

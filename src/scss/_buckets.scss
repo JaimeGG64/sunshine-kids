@@ -1,0 +1,39 @@
+.program-section{
+    background: $dark-blue;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    &__heading{
+        color: $yellow;
+        text-align: center;
+    }
+}
+
+.bucket-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.bucket-item {
+    display: flex;
+    flex-direction: column;
+    &__heading,
+    &__description,
+    &__icon {
+        color: $white;
+        text-align: center;
+    }
+    &__icon {
+        font-size: 3.75rem;
+    }
+    &__heading {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: map-get($break-point , "md")) {
+    .bucket-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
